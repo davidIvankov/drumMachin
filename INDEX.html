@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang=en>
+   <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <title>
+      Drum-machine
+      </title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+     <script >
+document.addEventListener("keypress", function(event) {
+  let press = event.key;
+  document.getElementById(press.toUpperCase()).play()
+});
+       function play(str) {
+         var audio= document.getElementById(str);
+         audio.play()
+       }
+     </script>
+      </head>
+  <body>
+    <script src="script.js">
+    </script>
+    <div class="body">
+    <h1 class="text-center">Drum Machine</h1>
+   <div  id="drum-machine">
+     
+  
+   <div class ="problem">
+     <div class="row">
+       
+     <button disabled class="drum-pad" id="heater-1" onclick="play('Q')">Q<audio  src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" class="clip" id="Q" ></button>
+    
+   
+     <button disabled class="drum-pad" id="heater-2" onclick="play('W')">W<audio  src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" class="clip" id="W" ></audio></button>
+    
+         
+     <button disabled class="drum-pad" id="heater-3" onclick="play('E')">E<audio  src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" class="clip" id="E" ></button>
+       
+           
+     <button disabled class="drum-pad" id="heater-4" onclick="play('A')">A<audio  src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" class="clip" id="A" ></button>
+       
+     <button disabled class="drum-pad" id="clap" onclick="play('S')">S<audio  src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" class="clip" id="S" ></button>
+     <button disabled class="drum-pad" id="Open-HH" onclick="play('D')">D<audio  src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" class="clip" id="D" ></button>
+     <button disabled class="drum-pad" id="kick-n'-hat" onclick="play('Z')">Z<audio  src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" class="clip" id="Z" ></button>
+     <button disabled class="drum-pad" id="kick" onclick="play('X')">X<audio  src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" class="clip" id="X" ></button>
+     <button disabled class="drum-pad"
+          id="closed-HH" onclick= "play('C')">C<audio  src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" class="clip" id="C" ></button>
+       </div>
+       </div>
+         <div id="display"  >
+     <div class="sound" id="sound-box">
+   OFF
+     </div>
+     </div>
+    <div class="jure">
+      <button class="ON btn btn-success">
+        ON
+       </button>
+       <button class="OFF btn btn-danger">
+         OFF
+       </button>
+       </div>
+    </div>
+       </div>
+  </body>
+</html>
