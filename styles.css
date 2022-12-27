@@ -65,3 +65,63 @@
     border-radius: 5%;
     border: 5px solid gray;
 }
+
+@media screen and (max-width: 714px){
+#drum-machine {
+        height: 40vh;
+        width: 90vw;
+        gap: 10px;
+        margin-top: 5vh;
+       
+    }
+}
+@media screen and (max-width: 480px) {
+    #drum-machine {
+            height: 30vh;
+            width: 100vw;
+            gap: 5px;
+            margin-top: 2.5vh;
+    
+        }
+
+}
+
+@media screen and (max-width: 400px) {
+#drum-machine {
+        height: 25vh;
+        width: 100vw;
+        gap: 5px;
+        margin-top: 2.5vh;
+
+    }
+
+        #display {
+            width: 20%;
+        
+            height: 30%;
+            margin-left: -30px;
+            
+        }
+
+                .sound {
+                    color: red;
+                    font-weight: bold;
+                    font-size: 10px
+                }
+        .ON,
+        .OFF {
+            width: 15vw;
+            height: 15vw;
+        }
+}
+
+@media screen and (max-width: 340px) {
+
+    #display {
+            width: 20%;
+    
+            height: 30%;
+            margin-left: -20px;
+    
+        }
+}
